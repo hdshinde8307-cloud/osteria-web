@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Menu — Òsteria, Andheri West</title>
+<meta name="description" content="The complete food and drinks menu at Òsteria — sharing plates, stone-baked pizza, pasta, craft beer, cocktails, wine and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="nav" class="light">
+  <div class="wrap">
+    <a href="index.html" class="brand-wordmark">òster<span>i</span>a</a>
+    <div id="nav-links">
+      <a href="index.html#about" onclick="closeNav()">About</a>
+      <a href="menu.html" onclick="closeNav()">Menu</a>
+      <a href="index.html#whats-on" onclick="closeNav()">What's On</a>
+      <a href="index.html#gallery" onclick="closeNav()">Gallery</a>
+      <a href="index.html#contact" onclick="closeNav()">Contact</a>
+    </div>
+    <button id="burger" onclick="toggleNav()">☰</button>
+  </div>
+</nav>
+
+<section id="menu-hero">
+  <!-- UPLOAD: images/menu-header.jpg — a wide interior shot (bar counter or dining
+       room works well) used as a moody banner behind the menu page title.
+       You can reuse the same photo as images/hero-entrance.jpg if you'd rather
+       not source a second one — just save a copy under this filename too. -->
+  <img class="bg" data-ph src="images/16.jpg" alt="Òsteria interior">
+  <div class="scrim"></div>
+  <div class="wrap">
+    <a href="index.html" class="back-home" style="display:inline-flex;align-items:center;gap:6px;color:var(--ivory);opacity:.8;font-size:.85rem;margin-bottom:18px">&larr; Back to Òsteria</a>
+    <span class="kicker">Every dish, every pour</span>
+    <h1>The Full Menu</h1>
+    <p>Small sharing plates to stone-baked pizza, craft beer to Mediterranean-inspired cocktails — everything on the table at Òsteria.</p>
+    <div class="pdf-btn-row">
+      <!-- Place a single combined PDF of your full menu at menu.pdf (next to this file)
+           for this download button to work. -->
+      <a href="menu.pdf" class="btn btn-ghost" download>Download Full Menu (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="menu-body">
+  <div class="wrap">
+    <div class="tab-toggle">
+      <button id="tab-food" class="active" onclick="setTab('food')">Food</button>
+      <button id="tab-drinks" onclick="setTab('drinks')">Drinks</button>
+    </div>
+
+    <div id="panel-food" class="menu-panel active">
+      <div class="pill-row"></div>
+      <div class="cat-sections"></div>
+      <div class="menu-notes" id="food-notes"></div>
+    </div>
+
+    <div id="panel-drinks" class="menu-panel">
+      <div class="pill-row"></div>
+      <div class="cat-sections"></div>
+      <div class="menu-notes" id="drinks-notes"></div>
+    </div>
+
+    <div class="pdf-btn-row bottom">
+      <a href="menu.pdf" class="btn btn-ghost" download>Download Full Menu (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <span class="f-brand">òsteria</span>
+        <span>Bar · Eatery · Beer Garden</span>
+      </div>
+      <div class="f-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#whats-on">What's On</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://instagram.com/osteria.mumbai" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>Dreamworks, C18, Dalia Estate, Off New Link Road, Andheri West, Mumbai 400053</span>
+      <span>Everyday, 11:30am – 1am</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

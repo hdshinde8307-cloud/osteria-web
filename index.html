@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Òsteria — Bar · Eatery · Beer Garden, Andheri West</title>
+<meta name="description" content="Òsteria is a bar, eatery and beer garden in Andheri West, Mumbai — craft beer, house cocktails, stone-baked pizza and Mediterranean-Asian sharing plates. Come for the food, stay for the moments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     IMAGE UPLOADS — READ ME
+     This site uses plain image files instead of embedded photos.
+     Create a folder named "images" next to this file, and drop in
+     JPG/PNG files using the EXACT filenames referenced below
+     (e.g. images/hero-entrance.jpg). Each <img> tag has a comment
+     right above it describing what photo to use. See also
+     README.txt in this folder for the full shopping list.
+     ============================================================ -->
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#hero" class="brand-wordmark">òster<span>i</span>a</a>
+    <div id="nav-links">
+      <a href="#about" onclick="closeNav()">About</a>
+      <a href="menu.html" onclick="closeNav()">Menu</a>
+      <a href="#whats-on" onclick="closeNav()">What's On</a>
+      <a href="#gallery" onclick="closeNav()">Gallery</a>
+      <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+    <button id="burger" onclick="toggleNav()">☰</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============
+     To use a video later: replace the <img class="bg"> below with
+     <video class="bg" autoplay muted loop playsinline><source src="images/hero.mp4" type="video/mp4"></video> -->
+<section id="hero">
+  <!-- UPLOAD: images/hero-entrance.jpg — wide/landscape shot of the arched brick
+       entrance at night (the doorway with the "Òsteria" sign visible through it).
+       At least 1920x1080, this is the biggest image on the site. -->
+  <video class="bg" autoplay muted loop playsinline>
+  <source src="images/hero3.mp4" type="video/mp4">
+</video>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Andheri West, Mumbai</span>
+      <h1>Come for the food.<br>Stay for the moments.</h1>
+      <p class="hero-sub">A bar, eatery and beer garden built around craft beer, house cocktails, stone-baked pizza and a table that never quite feels like leaving.</p>
+      <div class="hero-ctas">
+        <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+        <a href="#whats-on" class="btn btn-outline">What's On</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL</div>
+</section>
+
+<!-- ============ ABOUT / BRAND INTRODUCTION ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <p class="about-lead">"The best moments in life are shared on a table over drinks and honest, delicious food."</p>
+      <div class="about-body">
+        <p>Òsteria was born from a simple idea — that a cold beer, a warm pizza and good company are really all you need. Inspired by the easy charm of Mediterranean living and the bold flavours of Asian street kitchens, it's where crisp beers and cocktails, handmade pizzas and freshly made food come together in a laid-back, welcoming setting.</p>
+        <p>Every item on the menu is made from carefully sourced, fresh ingredients — simple recipes prepared with care and consistency, every time. Whether you're catching up with old friends or finding comfort in a quiet evening in, Òsteria feels like home from the very first visit.</p>
+      </div>
+    </div>
+    <div class="feature-strip">
+      <div><h3><span class="dot" style="background:var(--terracotta)"></span> Craft Beer &amp; Cider</h3><p>Rotating pours on tap, from a piney West Coast IPA to a Kala Khatta cider.</p></div>
+      <div><h3><span class="dot" style="background:var(--olive)"></span> Stone-Baked Pizza</h3><p>11-inch Neapolitan pies, fired fresh — Margherita to Frutti di Mare.</p></div>
+      <div><h3><span class="dot" style="background:var(--yellow)"></span> Beer Garden</h3><p>A green, lantern-lit courtyard built for long evenings and easy conversation.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="leaf-divider" style="color:var(--olive)">
+  <span class="ln"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c-5-3-8-7-8-12 5 0 9 3 8 8 5-1 8-5 8-10-5 0-9 3-8 8"/></svg>
+  <span class="ln"></span>
+</div>
+
+<!-- ============ FOOD TEASER ============ -->
+<section id="food" class="teaser-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">From the kitchen</span>
+      <h2>Food</h2>
+      <p class="lede">A few dishes to start with — the complete food menu has a lot more on offer.</p>
+    </div>
+    <div class="teaser-grid">
+      <!-- UPLOAD: images/food-truffle-fries.jpg — Truffle Fries Platter -->
+      <div class="teaser-card"><img data-ph src="images/2.jpg" alt="Truffle Fries Platter"><div class="tc-info"><span>₹450</span><h3>Truffle Fries Platter</h3><p>Truffle oil, parmesan, 3 dips</p></div></div>
+      <!-- UPLOAD: images/food-hummus-platter.jpg — Mediterranean Hummus Platter -->
+      <div class="teaser-card"><img data-ph src="images/4.jpg" alt="Mediterranean Hummus Platter"><div class="tc-info"><span>₹450</span><h3>Mediterranean Hummus Platter</h3><p>With pita, olives, falafel, couscous</p></div></div>
+      <!-- UPLOAD: images/food-katsu-chicken.jpg — Katsu Chicken -->
+      <div class="teaser-card"><img data-ph src="images/5.jpg" alt="Katsu Chicken"><div class="tc-info"><span>₹425</span><h3>Katsu Chicken</h3><p>Wasabi mayo, togarashi spices</p></div></div>
+      <!-- UPLOAD: images/food-truffle-funghi.jpg — Truffle Funghi pizza -->
+      <div class="teaser-card"><img data-ph src="images/6.jpg" alt="Truffle Funghi pizza"><div class="tc-info"><span>₹625</span><h3>Truffle Funghi</h3><p>Braised mushrooms, shimeji, thyme, truffle oil</p></div></div>
+      <!-- UPLOAD: images/food-lobster-risotto.jpg — Lobster Risotto -->
+      <div class="teaser-card"><img data-ph src="images/7.jpg" alt="Lobster Risotto"><div class="tc-info"><span>₹650</span><h3>Lobster Risotto</h3><p>Saffron bud, pan-seared lobster, truffle oil</p></div></div>
+      <!-- UPLOAD: images/food-roast-chicken.jpg — Òsteria Roast Chicken -->
+      <div class="teaser-card"><img data-ph src="images/8.jpg" alt="Òsteria Roast Chicken"><div class="tc-info"><span>₹525</span><h3>Òsteria Roast Chicken</h3><p>Crispy thyme baby potato, greens, red wine jus</p></div></div>
+    </div>
+    <div class="teaser-cta"><a href="menu.html#food" class="btn btn-outline-dark">Explore Full Food Menu</a></div>
+  </div>
+</section>
+
+<!-- ============ DRINKS TEASER ============ -->
+<section id="drinks" class="teaser-section dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">At the bar</span>
+      <h2>Drinks</h2>
+      <p class="lede">A taste of the bar — craft beer, cocktails, wine and a full back-bar await on the drinks menu.</p>
+    </div>
+    <div class="teaser-grid cols-4">
+      <!-- UPLOAD: images/drink-hugo.jpg — Hugo cocktail -->
+      <div class="teaser-card"><img data-ph src="images/9.jpg" alt="Hugo cocktail"><div class="tc-info"><span>₹550</span><h3>Hugo</h3></div></div>
+      <!-- UPLOAD: images/drink-capri-verde.jpg — Capri Verde cocktail -->
+      <div class="teaser-card"><img data-ph src="images/10.jpg" alt="Capri Verde cocktail"><div class="tc-info"><span>₹550</span><h3>Capri Verde</h3></div></div>
+      <!-- UPLOAD: images/drink-margarita-doro.jpg — Margarita d'Oro cocktail -->
+      <div class="teaser-card"><img data-ph src="images/11.jpg" alt="Margarita d'Oro cocktail"><div class="tc-info"><span>₹650</span><h3>Margarita d'Oro</h3></div></div>
+      <!-- UPLOAD: images/drink-japanese-rice-lager.jpg — Japanese Rice Lager on tap -->
+      <div class="teaser-card"><img data-ph src="images/12.jpg" alt="Japanese Rice Lager"><div class="tc-info"><span>₹345</span><h3>Japanese Rice Lager</h3></div></div>
+    </div>
+    <div class="teaser-cta"><a href="menu.html#drinks" class="btn btn-outline">Explore Drinks Menu</a></div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S ON ============ -->
+<section id="whats-on">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="color:var(--terracotta)">Worth planning around</span>
+      <h2 style="color:var(--oxblood-700)">What's On</h2>
+    </div>
+    <div class="wo-grid">
+
+      <div class="wo-card happy">
+        <span class="wo-tag">Mon – Fri, 12pm – 7pm</span>
+        <h3>Happy Hours</h3>
+        <p class="wo-price">Buy 2, Get 1 Free</p>
+        <details>
+          <summary>View Details</summary>
+          <div class="wo-details">
+            <p>Applies to:</p>
+            <ul>
+              <li>Craft &amp; Draught beers and ciders on tap</li>
+              <li>Wines by the glass (Sula, Grover, Fratelli, The Source)</li>
+              <li>Classic Cocktails</li>
+              <li>A select list of spirits</li>
+            </ul>
+          </div>
+        </details>
+        <p class="wo-fine">In-house offers cannot be clubbed with third-party discounts.</p>
+      </div>
+
+      <div class="wo-card brunch">
+        <span class="wo-tag">Sundays, 12pm – 4pm</span>
+        <h3>Sunday Brunch</h3>
+        <p class="wo-price">₹1,395++ &nbsp;·&nbsp; Drunch ₹2,450++</p>
+        <p>Unlimited sharing plates, flatbreads, pasta and dessert, with a drinks pairing — 1 drink per guest on Brunch, unlimited on Drunch.</p>
+        <details>
+          <summary>View Details</summary>
+          <div class="wo-details">
+            <p>Drink inclusions: craft beer, wine, sangria or a non-alcoholic cocktail by the glass, plus fresh lime soda / water and aerated beverages.</p>
+            <p>Food included:</p>
+            <ul id="brunch-food-list"><!-- populated by script.js from MENU.brunch.food_included --></ul>
+          </div>
+        </details>
+        <p class="wo-fine">GST/VAT and service charge extra. Cannot be clubbed with third-party offers.</p>
+      </div>
+
+      <div class="wo-card era">
+        <span class="wo-tag">Limited Time</span>
+        <!-- UPLOAD (optional): images/era-sushi.jpg — close-up of a sushi roll from the Era Takeover collab -->
+        <img class="era-thumb" data-ph src="images/13.jpg" alt="Era Takeover sushi roll">
+        <h3>Era Takeover</h3>
+        <p>Limited-time sushi curations at Òsteria, by the team at Era.</p>
+        <details>
+          <summary>View Details</summary>
+          <div class="wo-details">
+            <p>Sushi (8 pcs):</p>
+            <div id="era-item-list"><!-- populated by script.js from MENU.era_takeover.items --></div>
+          </div>
+        </details>
+        <p class="wo-fine">Please inform your server of any allergies. This is a current, limited-time offering — not part of the permanent menu.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY / ATMOSPHERE ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" style="color:var(--terracotta)">Inside Òsteria</span>
+      <h2 style="color:var(--oxblood-700)">A Look Around</h2>
+    </div>
+    <div class="gallery-grid">
+      <!-- UPLOAD: images/gallery-patio.jpg — wide shot of the outdoor beer garden / patio seating -->
+      <figure class="g-wide g-tall"><img data-ph src="images/14.jpg" alt="Outdoor beer garden seating"></figure>
+      <!-- Reuses the hero entrance photo -->
+      <figure><img data-ph src="images/0.jpg" alt="Entrance archway at night"></figure>
+      <!-- UPLOAD: images/gallery-pizza.jpg — close-up of a stone-baked pizza -->
+      <figure><img data-ph src="images/15.jpg" alt="Stone baked pizza"></figure>
+      <!-- UPLOAD: images/gallery-bar.jpg — wide shot of the bar counter -->
+      <figure class="g-tall"><img data-ph src="images/19.jpg" alt="Bar counter interior"></figure>
+      <!-- UPLOAD: images/gallery-booth.jpg — cane/wood booth seating interior -->
+      <figure><img data-ph src="images/17.jpg" alt="Booth seating"></figure>
+      <!-- UPLOAD: images/gallery-beerflight.jpg — a few beers/ciders together on a table -->
+      <figure><img data-ph src="images/18.jpg" alt="Craft beer flight"></figure>
+      <!-- UPLOAD: images/gallery-nightwindow.jpg — arched windows / exterior at night -->
+      <figure class="g-wide"><img data-ph src="images/16.jpg" alt="Arched windows at night"></figure>
+      <!-- UPLOAD: images/gallery-skewers.jpg — a plated sharing dish (e.g. skewers) -->
+      <figure><img data-ph src="images/21.jpg" alt="Grilled skewers"></figure>
+      <!-- UPLOAD: images/gallery-cocktail.jpg — a house cocktail with garnish -->
+      <figure><img data-ph src="images/22.jpg" alt="House cocktail"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <h2>Find Us</h2>
+      <div class="info-row"><span class="ico">&#128205;</span><div><span class="label">Address</span><p>Dreamworks, C18, Dalia Estate,<br>Off New Link Road, Andheri West,<br>Mumbai, Maharashtra 400053</p></div></div>
+      <div class="info-row"><span class="ico">&#128337;</span><div><span class="label">Hours</span><p>Everyday, 11:30am – 1am</p></div></div>
+      <div class="info-row"><span class="ico">&#128247;</span><div><span class="label">Instagram</span><p><a href="https://instagram.com/osteria.mumbai" target="_blank" rel="noopener">@osteria.mumbai</a></p></div></div>
+      <div class="amenities">
+        <span>Outdoor Seating</span><span>Valet Parking</span><span>Live Sports</span><span>Live Music</span><span>Alcohol Served</span><span>Takeaway</span>
+      </div>
+      <!-- Reservations: no online booking system on this site.
+           If you'd like, this note can instead be replaced with a link
+           to Zomato / EazyDiner / WhatsApp click-to-chat for bookings. -->
+      <div class="contact-note">For a table, walk-ins are welcome, or reach out via <strong>Instagram DM</strong> or phone. Ask us if you'd like a booking link added here (e.g. Zomato or EazyDiner).</div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=Dreamworks%2C%20C18%2C%20Dalia%20Estate%2C%20Off%20New%20Link%20Road%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400053&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Òsteria location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <span class="f-brand">òsteria</span>
+        <span>Bar · Eatery · Beer Garden</span>
+      </div>
+      <div class="f-links">
+        <a href="#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="#whats-on">What's On</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="https://instagram.com/osteria.mumbai" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>Dreamworks, C18, Dalia Estate, Off New Link Road, Andheri West, Mumbai 400053</span>
+      <span>Everyday, 11:30am – 1am</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
